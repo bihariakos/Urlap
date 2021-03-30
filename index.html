@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+<div>
+<ul>
+    <li>
+        <label for="nev">Név</label><br>
+        <input type="text" id="nev" required>
+    </li>
+    <li>
+        <label for="iranyitoszam">Irányítószám</label><br>
+        <input type="number" id="iranyitoszam" required>
+    </li>
+</ul>
+<ul>
+    <li>
+        <label for="telefonszam">Telefonszám</label><br>
+        <input type="tel" id="telefonszam" size="2" list="szamok" required>
+        <input type="tel" id="telefonszam" size="13" required>
+        <datalist id="szamok">
+            <option value="36">
+            <option value="20">
+        </datalist>
+    </li>
+    <li>
+        <label for="varos">Város</label><br>
+        <input type="text" id="varos" list="varosok" required>
+        <datalist id="varosok">
+            <option value="Debrecen">
+            <option value="Budapest">
+        </datalist>
+    </li>
+</ul>
+<ul>
+    <li>
+        <label for="orszag">Ország</label><br>
+        <input type="text" id="orszag" list="orszagok" required>
+        <datalist id="orszagok">
+            <option value="Magyarország">
+            <option value="Lengyelország">
+            <option value="Szlovákia">
+            <option value="Csehország">
+        </datalist>
+    </li>
+</ul>
+<ul>
+    <li>
+        <label for="cim">Cím</label><br>
+        <input type="text" id="cim" required>
+    </li>
+</ul>
+<ul>
+    <li>
+        <input type="button" value="Mentés"id="gomb">
+    </li>
+</ul>
+</div>
+</body>
+</html>
